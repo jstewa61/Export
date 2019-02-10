@@ -1,0 +1,77 @@
+/* style ref
+TYPE
+Karla{
+  font-weight: 400 or 700;
+  font-style: normal or italic;
+}
+
+COLOR{
+  light grey: #e7e7e9
+  orange: #f58537
+  blue: #445c7a
+  very dark blue grey: #15202e
+}*/
+
+
+
+/* GLOBAL STYLES*/
+p, h1, h2, h3, li, a {
+  font-family: 'Karla', sans-serif;
+  color: #15202e;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 700;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+body{
+  margin: 0px;
+}
+
+
+
+/*NAV*/
+.navigation{
+  width: 12%;
+  height: 100%;
+  /*background: grey;*/
+  padding: 60px 10px 0px 30px;
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 35px;
+  font-size: 1.2em;
+  line-height: 3em;
+}
+
+a:visited {
+  color: #15202e;
+}
+
+
+/*FOOTER*/
+footer{
+  height: 200px;
+  background: #e7e7e9;
+}
+
+
+
+/*HOMEPAGE*/
+header{
+  height: 100vh;
+  /*background: red;*/
+  background-image: url("images/single command tex.svg");
+  background-size: 8%;
+  background-repeat: repeat;
+}
+
+main{
+  height: 1000px;
+}
