@@ -30,7 +30,7 @@ img, svg {
 }
 
 body{
-  margin: 0px;
+  margin: 0 auto;
 }
 
 
@@ -74,4 +74,19 @@ header{
 
 main{
   height: 1000px;
+}
+
+/* Bios */
+
+.bio-img {
+  display: block;
+  width: 100%;
+}
+
+.column {width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
