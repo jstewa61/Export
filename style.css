@@ -44,6 +44,7 @@ li {list-style-type: none;
   /*background: grey;*/
   padding: 60px 10px 0px 30px;
   position: absolute;
+  z-index: 5;
 }
 
 nav ul{
@@ -86,13 +87,18 @@ footer{
 header{
   height: 100vh;
   /*background: red;*/
+  /*
   background-image: url("images/single command tex.svg");
   background-size: 8%;
   background-repeat: repeat;
+  */
 }
 
 main{
   height: auto;
+  background-image: url("images/single command tex.svg");
+  background-size: 8%;
+  background-repeat: repeat;
 }
 
 /* photo grid */
