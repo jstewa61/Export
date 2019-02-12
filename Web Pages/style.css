@@ -4,7 +4,6 @@ Karla{
   font-weight: 400 or 700;
   font-style: normal or italic;
 }
-
 COLOR{
   light grey: #e7e7e9
   orange: #f58537
@@ -73,7 +72,7 @@ header{
 }
 
 main{
-  height: 1000px;
+  height: auto;
 }
 
 /* photo grid */
@@ -149,6 +148,76 @@ main{
   }
 }
 
+
+.grid-container{
+  width: 100%;
+  padding: 15px;
+}
+
+.student-grid{
+  display: grid;
+  max-width: 400px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 15px;
+}
+
+.grid-item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  padding: 0px;
+}
+
+.grid-item:hover .overlay{
+  opacity: .7
+}
+
+.grid-item img, .grid-item a{
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 500px){
+  .student-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 700px;
+  }
+  .grid-container{
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 720px){
+  .student-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 1000px;
+  }
+  .grid-container{
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .student-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    max-width: 1440px;
+  }
+  .grid-container{
+    padding: 100px;
+  }
+}
+
+
+
+
+
 /* Bios */
 
 .bio-img {
@@ -162,4 +231,3 @@ main{
 .row {
   display: flex;
   flex-direction: row;
-}
