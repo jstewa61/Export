@@ -12,7 +12,9 @@
 
     <header>
       <div class="navigation">
+        <!-- Static logo
         <a href="index.html"><img src="images/Export logo.svg" alt="Export logo"></a>
+        -->
         <a href="index.html" id="command-hover"><i id="export-logo"></i></a>
         <nav>
           <ul>
@@ -21,6 +23,9 @@
             <li><a href="process.html">Process</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="bgAnim">
+        <i id="command"></i>
       </div>
     </header>
 
@@ -339,7 +344,7 @@
      <script src="images/logo anim/lottie.js"></script>
 
      <script>
-     var animation = bodymovin.loadAnimation({
+     var logoAnim = bodymovin.loadAnimation({
        container: document.getElementById('export-logo'),
        renderer: 'svg',
        loop: false,
@@ -351,15 +356,23 @@
      btn = document.getElementById('command-hover');
 
      btn.addEventListener('mouseenter',function(){
-       animation.playSegments([0,40], true);
-       animation.setSpeed(1);
+       logoAnim.playSegments([0,40], true);
+       logoAnim.setSpeed(1);
      })
 
      btn.addEventListener('mouseleave',function(){
-       //animation.setDirection(-1)
-       //animation.setSpeed(1);
-
+       //logoAnim.setDirection(-1)
+       //logoAnim.setSpeed(1);
      })
+
+
+     var headerAnim = bodymovin.loadAnimation({
+        container: document.getElementById('command'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'images/temp folder/command1sec.json'
+      })
 
 
      </script>
