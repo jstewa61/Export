@@ -12,7 +12,8 @@
 
     <header>
       <div class="navigation">
-        <a href="index.html"><img src="images/Export logo.svg" alt="Export logo"></a>
+        <!-- <a href="index.html"><img src="images/Export logo.svg" alt="Export logo"></a> -->
+        <a href="index.html" id="command-hover"><i id="export-logo"></i></a>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -330,7 +331,39 @@
       <p>footer</p>
     </footer>
 
+
+
      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+     <script src="images/logo anim/lottie.js"></script>
+
+     <script>
+     var animation = bodymovin.loadAnimation({
+       container: document.getElementById('export-logo'),
+       renderer: 'svg',
+       loop: false,
+       autoplay: false,
+       path: 'images/logo anim/command 1s-10f.json'
+     })
+
+
+     btn = document.getElementById('command-hover');
+
+     btn.addEventListener('mouseenter',function(){
+       animation.playSegments([0,40], true);
+       animation.setSpeed(1);
+     })
+
+     btn.addEventListener('mouseleave',function(){
+       //animation.setDirection(-1)
+       //animation.setSpeed(1);
+
+     })
+
+
+     </script>
+
 
   </body>
 </html>
