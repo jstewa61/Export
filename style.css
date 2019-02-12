@@ -47,6 +47,7 @@ li {list-style-type: none;
   z-index: 5;
 }
 
+
 nav ul{
   margin-top: 2em;
   list-style-type: none;
@@ -96,6 +97,9 @@ header{
 
 main{
   height: auto;
+}
+
+.command-bg{
   background-image: url("images/single command tex.svg");
   background-size: 8%;
   background-repeat: repeat;

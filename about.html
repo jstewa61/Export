@@ -4,9 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Export: VCD BFA Show 2019">
-    <title>⌘Export</title>
+    <title>⌘Export | About</title>
   </head>
   <body>
-
+    <header>
+      <div class="navigation">
+        <!-- Static logo
+        <a href="index.html"><img src="images/Export logo.svg" alt="Export logo"></a>
+        -->
+        <a href="index.html" id="command-hover"><i id="export-logo"></i></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bgAnim">
+        <i id="command"></i>
+      </div>
+    </header>
   </body>
+
+  <footer>
+  </footer>
+
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+  <script src="images/logo anim/lottie.js"></script>
+
+  <script>
+  var logoAnim = bodymovin.loadAnimation({
+    container: document.getElementById('export-logo'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'images/logo anim/command 1s-10f.json'
+  })
+
+
+  btn = document.getElementById('command-hover');
+
+  btn.addEventListener('mouseenter',function(){
+    logoAnim.playSegments([0,40], true);
+    logoAnim.setSpeed(1);
+  })
+
+  btn.addEventListener('mouseleave',function(){
+    //logoAnim.setDirection(-1)
+    //logoAnim.setSpeed(1);
+  })
+
+  </script>
+
+
 </html>
