@@ -1,27 +1,30 @@
 /* style ref
+OLD STYLES: Karla{ font-weight: 400 or 700; font-style: normal or italic;}
+Colors{light grey: #e7e7e9; orange: #f58537; blue: #445c7a; very dark blue grey: #15202e}
+
 TYPE
-Karla{
-  font-weight: 400 or 700;
-  font-style: normal or italic;
+Museo Sans{
+  font-wright: 300 or 500 or 700 or 900;
+  font-style: italic ONLY FOR 300 AND 500;
 }
-COLOR{
-  light grey: #e7e7e9
-  orange: #f58537
-  blue: #445c7a
-  very dark blue grey: #15202e
-}*/
+COLORS
+light grey: #E7E7E9;
+medium blue: #114A7F;
+lime green: #ABD037
+cyan: #54C0D0;
+*/
 
 
 
 /* GLOBAL STYLES*/
 p, h1, h2, h3, li, a, .overlay {
-  font-family: 'Karla', sans-serif;
-  color: #15202e;
+  font-family: museo-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 a{
   text-decoration: none;
-  font-weight: 700;
 }
 
 img, svg {
@@ -32,61 +35,88 @@ body{
   margin: 0 auto;
 }
 
-li {list-style-type: none;
+html{
+  scroll-behavior: smooth;
 }
 
 
-
 /*NAV*/
+.sticky-command{
+  position: fixed;
+  width: 52px;
+}
+
 .navigation{
   width: 200px;
-  height: 100%;
   /*background: grey;*/
   padding: 60px 10px 0px 30px;
   position: absolute;
   z-index: 5;
 }
 
-
 nav ul{
-  margin-top: 2em;
-  list-style-type: none;
-  padding-left: 35px;
+  margin-top: 2.5em;
+  list-style: none;
+  /*list-style-image: url("images/_nav/location bullet.svg");*/
+  padding-left: 15px;
   font-size: 1.2em;
-  line-height: 1.2em;
+}
+
+nav ul li{
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 1.2em;
 }
 
 a:visited {
-  color: #15202e;
+  color: #114A7F;
 }
 
-li{
-  margin-bottom: 1.5em;
+.location-bullets li a{
+  font-weight: 700;
+  color: #114A7F;
+  opacity: .5;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-
-.bgAnim{
-  height: 100vh;
-  pointer-events: none;
+.location-bullets li a:hover{
+  opacity: 1;
 }
 
-.bgAnim img{
-  max-width: 100%;
-  max-height: 100%;
+.location-bullets li#current-page a{
+  opacity: 1;
 }
+
+.location-bullets li#current-page::before{
+  content: '';
+  width: 14.7px;
+  height: 12.144px;
+  position: absolute;
+  background-image: url('images/_nav/location bullet.svg');
+  background-size: cover;
+  background-position: center;
+  top: 45%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
 
 
 /*FOOTER*/
 footer{
   height: 200px;
   background: #e7e7e9;
+  bottom: 0px;
 }
 
 
 
 /*HOMEPAGE*/
 header{
-  height: 100vh;
+  height: auto;
   /*background: red;*/
   /*
   background-image: url("images/single command tex.svg");
@@ -99,11 +129,24 @@ main{
   height: auto;
 }
 
+.bgAnim{
+  height: 100vh;
+  pointer-events: none;
+}
+
+.bgAnim img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*
 .command-bg{
   background-image: url("images/single command tex.svg");
-  background-size: 8%;
+  background-size: 4%;
   background-repeat: repeat;
 }
+*/
+
 
 /* photo grid */
 
@@ -113,12 +156,6 @@ main{
 }
 .col {
   flex: 1;
-}
-
-@media (max-width: 400px) {
-  .flex-grid {
-    display: block;
-  }
 }
 
 * {box-sizing: border-box}
@@ -146,38 +183,33 @@ main{
   position: absolute;
   bottom: 0;
   background: #FFFFFF;
-  color: #f58537;
   width: 100%;
   height: 100%;
-  transition: .9s ease;
-  opacity:0;
-  color: #f58537;
+  opacity: 0;
+  color: #54C0D0;
   font-size: 21px;
   padding: 25px 25px 25px 25px;
   text-align: left;
   font-size: 1.5em;
   font-weight: 900;
   margin: 0px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
+
+/*
+.overlay span{
+  position: absolute;
+  bottom: 10%;
+}
+*/
 
 .indeximg {display: inline;}
 
-.container:hover .overlay {
-  opacity: .7;
-}
-
 .index {padding: 0px 0px 100px 0px;
 }
-
-@media screen and (min-width: 500px){
-  .flex-grid2 {display: flex;
-    flex-direction: row;
-  }
-  .col2 {
-    flex: 1;
-  }
-}
-
 
 .grid-container{
   width: 100%;
@@ -189,7 +221,7 @@ main{
   max-width: 400px;
   margin: 0 auto;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto;
   grid-gap: 15px;
 }
 
@@ -197,7 +229,6 @@ main{
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: red;
   padding: 0px;
 }
 
@@ -205,11 +236,15 @@ main{
   opacity: .7
 }
 
-.grid-item img, .grid-item a{
+.grid-item img{
   margin: 0px;
   width: 100%;
   height: 100%;
 }
+.grid-item a{
+  margin: 0px;
+}
+
 
 @media screen and (min-width: 500px){
   .student-grid{
