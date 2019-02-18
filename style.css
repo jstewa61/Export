@@ -57,7 +57,7 @@ html{
 nav ul{
   margin-top: 2.5em;
   list-style: none;
-  /*list-style-image: url("images/_nav/location bullet.svg");*/
+  /*list-style-image: url("images/nav/location bullet.svg");*/
   padding-left: 15px;
   font-size: 1.2em;
 }
@@ -95,7 +95,7 @@ a:visited {
   width: 14.7px;
   height: 12.144px;
   position: absolute;
-  background-image: url('images/_nav/location bullet.svg');
+  background-image: url('images/nav/location bullet.svg');
   background-size: cover;
   background-position: center;
   top: 45%;
