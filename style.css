@@ -152,6 +152,8 @@ nav ul li#current-page a{
 }
 }
 
+.small-screen-menu img {width: 100px;}
+
 /*FOOTER*/
 footer{
   height: 200px;
