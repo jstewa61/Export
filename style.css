@@ -112,7 +112,7 @@ a:visited, h1, h2 {
 
 nav ul li a{
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #114A7F;
   padding: 5px;
 }
@@ -121,7 +121,7 @@ nav ul li a{
 
 nav ul li a{
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #114A7F;
 }
 }
@@ -140,6 +140,16 @@ nav ul li#not-current-page a:hover{
 
 nav ul li#current-page a{
   opacity: 1;
+}
+
+@media screen and (min-width: 500px) {
+.small-screen-menu {display: none;
+}
+}
+
+@media screen and (max-width: 499px) {
+.large-screen-menu {display: none;
+}
 }
 
 /*FOOTER*/
