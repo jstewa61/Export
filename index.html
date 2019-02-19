@@ -12,9 +12,11 @@
   <body>
 
     <header id="top-of-page">
-      <div class="navigation">
+      <div class="navigation-top">
+        <!--left corner sticky command only logo
         <a href="index.html#top-of-page"><img src="images/logos/command only.svg" alt="Export logo" class="sticky-command"></a>
         <a href="index.html"><img src="images/logos/e only.svg" alt="Export logo"></a>
+        -->
         <!--Full logo
         <a href="index.html"><img src="images/logos/command e logo lockup.svg" alt="Export logo"></a>
         -->
@@ -22,11 +24,12 @@
         <a href="index.html" id="command-hover"><i id="export-logo"></i></a>
         -->
         <nav>
-          <ul class="location-bullets">
+          <ul class="menu">
             <li id="current-page"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="process.html">Process</a></li>
+            <li id="not-current-page"><a href="about.html">About</a></li>
+            <li><a href="index.html"><img src="images/logos/command e logo lockup.svg" alt="Export logo"></a></li>
+            <li id="not-current-page"><a href="location.html">Location</a></li>
+            <li id="not-current-page"><a href="process.html">Process</a></li>
           </ul>
         </nav>
       </div>
@@ -195,28 +198,28 @@
 
      <script src="images/logo anim/lottie.js"></script>
 
-<!--
+
      <script>
-     var logoAnim = bodymovin.loadAnimation({
-       container: document.getElementById('export-logo'),
-       renderer: 'svg',
-       loop: false,
-       autoplay: false,
-       path: 'images/logo anim/command 1s-10f.json'
-     })
+//     var logoAnim = bodymovin.loadAnimation({
+//       container: document.getElementById('export-logo'),
+//       renderer: 'svg',
+//       loop: false,
+//       autoplay: false,
+//       path: 'images/logo anim/command 1s-10f.json'
+//     })
 
 
-     btn = document.getElementById('command-hover');
+//     btn = document.getElementById('command-hover');
+//
+//     btn.addEventListener('mouseenter',function(){
+//       logoAnim.playSegments([0,40], true);
+//       logoAnim.setSpeed(1);
+//     })
 
-     btn.addEventListener('mouseenter',function(){
-       logoAnim.playSegments([0,40], true);
-       logoAnim.setSpeed(1);
-     })
-
-     btn.addEventListener('mouseleave',function(){
+//     btn.addEventListener('mouseleave',function(){
        //logoAnim.setDirection(-1)
        //logoAnim.setSpeed(1);
-     })
+//     })
 
 
      var headerAnim = bodymovin.loadAnimation({
