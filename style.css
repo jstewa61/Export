@@ -17,10 +17,28 @@ cyan: #54C0D0;
 
 
 /* GLOBAL STYLES*/
-p, h1, h2, h3, li, a, .overlay {
+p, h1, h2, h3, li, lh, a, .overlay {
   font-family: museo-sans, sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+h1, p, h2 {text-align: center;
+}
+
+lh {font-weight: bold;
+}
+
+h1, h2 {padding: 100px 0px 0px 0px;
+}
+
+p {padding: 0px 20px 0px 20px;
+}
+
+@media screen and (min-width: 800px) {
+
+p {padding: 0px 200px 0px 200px;
+}
 }
 
 a{
@@ -35,10 +53,22 @@ body{
   margin: 0 auto;
 }
 
+li {list-style-type: none;
+}
+
 html{
   scroll-behavior: smooth;
 }
 
+iframe {
+    width: 1500px;
+    height: 700px;
+    margin: 0 auto;
+    display: block;
+}
+
+.map {padding: 100px 0px 0px 0px;
+}
 
 /*NAV*/
 .sticky-command{
@@ -50,7 +80,7 @@ html{
   width: 200px;
   /*background: grey;*/
   padding: 60px 10px 0px 30px;
-  position: absolute;
+  /*position: absolute;*/
   z-index: 5;
 }
 
@@ -68,7 +98,7 @@ nav ul li{
   margin-bottom: 1.2em;
 }
 
-a:visited {
+a:visited, h1, h2 {
   color: #114A7F;
 }
 
