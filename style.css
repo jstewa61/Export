@@ -403,3 +403,14 @@ h1.bold-h1{
     padding: 20px;
   }
 }
+
+
+
+
+
+/*About*/
+.text-column{
+  margin: 0 auto;
+  max-width: 900px;
+  padding-bottom: 100px;
+}
