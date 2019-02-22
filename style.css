@@ -93,6 +93,7 @@ nav ul.menu{
   padding-left: 0px;
 }
 
+
 nav ul img{
   width: 150px !important;
 }
@@ -210,14 +211,6 @@ main{
 
 
 /* photo grid */
-
-.flex-grid {
-  display: flex;
-  flex-direction: row;
-}
-.col {
-  flex: 1;
-}
 
 * {box-sizing: border-box}
 
