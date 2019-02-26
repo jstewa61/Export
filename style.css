@@ -51,6 +51,8 @@ img, svg {
 
 body{
   margin: 0 auto;
+  /*cursor: wait;*/
+  cursor: url(images/cursor-default.svg), cursor)
 }
 
 li {list-style-type: none;
