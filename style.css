@@ -52,7 +52,7 @@ img, svg {
 body{
   margin: 0 auto;
   /*cursor: wait;*/
-  cursor: url(images/cursor-default.svg), cursor)
+  cursor: url(images/cursor-default.svg), auto;
 }
 
 li {list-style-type: none;
@@ -118,7 +118,6 @@ nav ul li a{
 nav ul li a{
   font-weight: 700;
   font-size: 1.3em;
-  color: #114A7F;
 }
 }
 
