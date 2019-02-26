@@ -213,7 +213,7 @@ main{
 
 * {
   box-sizing: border-box;
-  cursor: url(images/cursordefault.svg), auto;
+  /*cursor: url(images/cursordefault.svg), auto;*/
 }
 
 
