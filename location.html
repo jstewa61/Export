@@ -47,9 +47,9 @@
   <main>
     <h2>Getting Here</h2>
 
-    <p>The BFA show will be located in the Taylor Hall Gallery at Kent State University. Taylor hall is located at <strong>300 Midway Dr, Kent, Ohio 44243</strong>. Visitors can park in [PARKING INFO HERE].
+    <p>The BFA show will be located in the Taylor Hall Gallery at Kent State University. Taylor Hall is located at <strong>300 Midway Dr, Kent, Ohio 44243</strong>. Visitors can park in [PARKING INFO HERE].
     </p>
-    </div>
+
 
     <div class="map-container">
         <div id='map'></div>
@@ -58,24 +58,71 @@
         const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/jstewa61/cjsnch0y92c4i1fo4e51oig4o',
-        center: [-81.343740, 41.150191],
+        center: [-81.343764, 41.150267],
         zoom: 17.0
         });
+
+
+
+
+
+        map.on("load", function () {
+        /* Image: An image is loaded and added to the map. */
+        map.loadImage("https://imgur.com/a/iq3nmg1.png", function(error, image) {
+        if (error) throw error;
+        map.addImage("custom-marker", image);
+        /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+        map.addLayer({
+        id: "markers",
+        type: "symbol",
+        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+        source: {
+        type: "geojson",
+        data: {
+        type: 'FeatureCollection',
+        features: [
+        {
+        type: 'Feature',
+        properties: {},
+        geometry: {
+        type: "Point",
+        coordinates: [-81.3438, 41.1503]
+        }
+        }
+        ]
+        }
+        },
+        layout: {
+        "icon-image": "custom-marker",
+        }
+        });
+        });
+        });
+
+
+
+
+
+
         </script>
     </div>
 
 
-
-    <div class="text-column">
-
     <h2>The Gallery</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <p>The Taylor Hall Gallery is located on the second floor of Taylor Hall. The second floor is acccessable through the steps on the exterior of the building or through the first floor entrances. Guests with limited mobility may use the elevator located in the first floor entrance near the May 4 Museum.
     </p>
-    </div>
+
   </main>
   </body>
 
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <footer>
   </footer>
 
