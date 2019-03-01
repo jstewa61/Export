@@ -244,7 +244,7 @@ main{
   height: 100%;
 }
 
-.container img, a {margin: 5px;
+.container img {margin: 5px;
   display: block;
 }
 
@@ -414,14 +414,45 @@ h1.bold-h1{
 
 
 
+footer ul{
+	text-decoration: none;
+	color:#E6E7E8;
+	display:flex;
+	font-size: 24px;
+	margin: 16px 0 10px 0;
+}
+
+
+
 
 
 /*About*/
+p{
+  line-height: 1.5em;
+}
+
 .text-column{
   margin: 0 auto;
   max-width: 900px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
+
+.green-link{
+  color: #ABD037;
+  border-bottom: 2px solid #ABD037;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 1;
+}
+
+.green-link:hover{
+  opacity: .5;
+}
+
+
+
 
 /*location*/
 
