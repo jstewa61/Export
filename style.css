@@ -212,7 +212,7 @@ footer img{
   width: 200px;
   display: block;
   margin: 40px auto 0 auto;
-  
+
 }
 
 
@@ -290,10 +290,11 @@ main{
   width: 100%;
   height: 100%;
   opacity: 0;
-  color: #414042;
+  /*color: #414042;*/
+  color: white;
   font-size: 21px;
   padding: 25px 25px 25px 25px;
-  text-align: left;
+  text-align: center;
   font-size: 1.5em;
   font-weight: 900;
   margin: 0px;
@@ -303,12 +304,15 @@ main{
   transition: .5s ease-in-out;
 }
 
-/*
+
 .overlay span{
   position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
   bottom: 10%;
 }
-*/
+
 
 .indeximg {display: inline;}
 
@@ -480,4 +484,8 @@ p{
 /*location*/
 
 .map-container {padding: 50px 0px 0px 0px;
+}
+
+.margin-top-50{
+  margin-top: 50px;
 }
