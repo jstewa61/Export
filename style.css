@@ -453,13 +453,23 @@ h1.bold-h1{
   line-height: 1.5em;
 }
 
-@media screen and (min-width: 500px){
+#desktop-bio-photostrip{
+  display: none;
+}
+
+@media screen and (min-width: 600px){
   .bio-grid{
     display: flex;
     max-width: 900px;
   }
   .bio-grid-container{
     padding: 20px;
+  }
+  #desktop-bio-photostrip{
+    display: inline;
+  }
+  #mobile-bio-photo{
+    display: none;
   }
 }
 
