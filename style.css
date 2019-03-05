@@ -362,8 +362,15 @@ main{
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
+
 .grid-item a{
   margin: 0px;
+}
+
+/*temporary disable filter for select students*/
+.temporary-disable{
+  -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%) !important;
 }
 
 
