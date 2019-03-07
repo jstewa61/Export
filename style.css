@@ -548,3 +548,21 @@ p{
 .margin-top-50{
   margin-top: 50px;
 }
+
+.two-col{
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.two-col div{
+  width: 50%;
+}
+
+@media screen and (min-width: 780px) {
+  .two-col p {
+    padding:0;
+  }
+}
